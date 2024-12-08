@@ -3,7 +3,7 @@ import pandas as pd
 import os
 import zipfile
 import gdown
-from load_data.LoadData import DataFrameLoadder
+from LoadData import DataFrameLoadder
 
 # download all the necesary files for the project 
 
