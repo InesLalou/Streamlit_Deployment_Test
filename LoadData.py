@@ -32,11 +32,6 @@ class DataFrameLoader():
             self.raw_recipes = pd.read_csv(self.path_raw_recipes)
             self.pp_recipe = pd.read_csv(self.path_pp_recipe)
 
-            # You can now perform operations directly here, instead of using an external function
-            # Example of simple preview (just loading the first 5 rows for each dataset)
-            self.raw_interaction = self.raw_interaction.head(5)
-            self.raw_recipes = self.raw_recipes.head(5)
-            self.pp_recipe = self.pp_recipe.head(5)
 
             # Here, instead of calling prepare_final_dataframe(), we could manually merge or process the data
             # For example, simply concatenating the datasets:
