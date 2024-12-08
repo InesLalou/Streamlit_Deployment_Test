@@ -3,7 +3,7 @@ import pandas as pd
 import os
 import zipfile
 import gdown
-from LoadData import DataFrameLoadder
+from LoadData import DataFrameLoader
 
 # download all the necesary files for the project 
 
@@ -51,7 +51,7 @@ if __name__ == "__main__":
 
     if "clean_df" not in st.session_state:
     # Executed only once per session
-      df = DataFrameLoadder(path_raw_interaction='./data_files/RAW_interactions.csv',
+      df = DataFrameLoader(path_raw_interaction='./data_files/RAW_interactions.csv',
                             path_raw_recipes='./data_files/RAW_recipes.csv',
                             pp_recipe='./data_files/PP_recipes.csv').load()
       st.session_state.clean_df = df
